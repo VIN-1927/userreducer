@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import HeaderLoggedOut from './HeaderLoggedOut'
 import HeaderLoggedIn from './HeaderLoggedIn'
 import StateContext from '../StateContext'
-import DispatchContext from '../DispatchContext'
+
 
 
 function Header(props) {

@@ -6,14 +6,15 @@ function HomeGuest() {
   const [username, setUsername] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-
+  
   async function handleSubmit(e) {
     e.preventDefault();
     try {
       await Axios.post("/register", {
         username,
         email,
-        password,
+        password
+     
       });
       console.log("USER WAS SUCCESSFULLY CREATED");
     } catch (e) {
@@ -49,6 +50,7 @@ function HomeGuest() {
                 autoComplete="off"
               />
             </div>
+            
             <div className="form-group">
               <label htmlFor="email-register" className="text-muted mb-1">
                 <small>Email</small>

@@ -5,6 +5,11 @@ body {
   .header-bar {
     background-color: #292929;
   }
+
+  .container--narrow {
+    max-width: 732px;
+  }
+  
   
   .Container--narrow {
     max-width: 768px;
@@ -574,7 +579,14 @@ body {
       opacity: 1;
     }
   }
-  
+  .Container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: 3px solid #212529;
+    
+  }
   @-webkit-keyframes opacitychange {
     0%,
     100% {
